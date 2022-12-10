@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  display: inline-block;
+  width: 60vw;
+  height: 70vh;
+  margin: 15vh 20vw;
+}
+
+.container-calculator {
+  border: 5px solid black;
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-rows: 20% 80%;
+  height: 100%;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+.screen-ans {
+  display: block;
+  background-color: cyan;
+  height: 40%;
+  width: 60%;
+  font-size: 2rem;
+  text-align: right;
+}
+
+
+.screen-equation {
+  display: block;
+  background-color: cyan;
+  height: 60%;
+  width: 60%;
+  /* height: 100%; */
+  font-size: 3rem;
+  text-align: right;
+}
+
+.num-pad {
+  border-top: 3px solid black;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  background-color: bisque;
+  width: 100%;
+  height: 100%;
+}
+
+.dial-pad {
+  background-color: lightblue;
+}
+
+.nums {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.ariths {
+  display: grid;
+  grid-template-rows: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.num,
+.btn-reset {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.btn-reset {
+  background-color: rgb(211, 67, 67);
+  color: white;
+}
+
+
+
+.arith-pad {
+  background-color: lightpink;
+}
+
+.arith {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.num:hover, 
+.arith:hover,
+.btn-reset:hover {
+  cursor: pointer;
+}
+
+.num:active, 
+.arith:active {
+  opacity: 0.4;
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 80vw;
+    height: 60vh;
+    margin: 20vh 10vw;
+  }
+}
